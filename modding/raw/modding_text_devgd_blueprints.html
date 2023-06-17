@@ -1,0 +1,156 @@
+<h2>Blueprints</h2>
+<p>Blueprints (not to be confused with in-game blueprints or Unreal blueprints) is a data structure in the engine which contains every object definition possible to the game.<br /><br />All sprites, recipes, functions, UI Components, complex objects are stored in Blueprints before they are initialized.<br /><br />If you wanted to add an item to the game, for example a sword - you would first add it's blueprint. After that you can give the sword to any player, NPC or container, by passing the blueprint codename to different creation functions.</p>
+<h3>Syntax</h3>
+<h4>All blueprints are stored on the _BLUEPRINTS global object</h4>
+<p><strong>Important:</strong> You should never directly edit or retrieve a blueprint from the _BLUEPRINTS object, instead use the functions provided below.</p>
+<pre class="language-javascript"><code>_BLUEPRINTS[&lt;BLUEPRINT_TYPE&gt;][&lt;BLUEPRINT_CODENAME&gt;]</code></pre>
+<h4>Get a blueprint</h4>
+<p><strong>Important:</strong> If you modify the blueprint after you get it, there will be side effects</p>
+<pre class="language-javascript" style="word-spacing: 0px; font-size: medium; font-weight: 400;"><code>game.getBlueprint(&lt;BLUEPRINT_TYPE&gt;, &lt;BLUEPRINT_CODENAME&gt;);</code></pre>
+<h4>Add a new blueprint</h4>
+<p><strong>Note:</strong> The BLUEPRINT_DEFINITION for each BLUEPRINT_TYPE is different, to check a blueprint definition, simple check an existing definition within that blueprint type.</p>
+<pre class="language-javascript" style="word-spacing: 0px; font-size: medium; font-weight: 400;"><code>game.addBlueprint(&lt;BLUEPRINT_TYPE&gt;, &lt;BLUEPRINT_DEFINTION&gt;);</code></pre>
+<h3 dir="ltr" style="line-height: 1.38; margin-top: 16pt; margin-bottom: 4pt;"><span style="font-size: 14pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Blueprints reference</span><b style="font-weight: normal;" id="docs-internal-guid-e8781dce-7fff-527b-3e30-fb90905266b3"></b></h3>
+<div dir="ltr" style="margin-left: 0pt;" align="center">
+<table border="1pt" cellpadding="5pt" style="border-collapse: collapse; height: 341px; border-color: initial; border-style: none; float: left;"><colgroup><col width="333" /><col width="333" /></colgroup>
+<tbody>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">TILESETS</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All tileset files</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">AUDIO</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All audio files</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">SPRITES</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All sprite definitions</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">RECIPES</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All crafting recipes</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">SCENES</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All scenes (e.g. front menu, death screen)</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">COMPONENTS</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All UI components (e.g. hud elements, buttons)</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">PARTICLES</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All particle effects</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">SIMPLE_EXT</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All simple extensions (auto-loaded on create)</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">COMPLEX_ITEMS</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All complex items (items that exist in the world)</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">SPINES</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All spine definitions (Advanced Animations)</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">INV_ITEMS</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All inventory items (Including resources)</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">_STATUSES</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All status effects</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">LOOT_TABLES</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All loot tables</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">ANIMATEDSPRITES</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All animated sprites (similar to SPRITES)</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">DIALOGS</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All conversation dialogue</span></p>
+</td>
+</tr>
+<tr style="height: 20px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">EXTENSIONS</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 20px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All extensions for COMPLEX_ITEMS</span></p>
+</td>
+</tr>
+<tr style="height: 21px;">
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 21px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">RESEARCH_NODES</span></p>
+</td>
+<td style="vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; height: 21px; width: 318.688px; border: 1pt solid #000000;">
+<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">All research nodes in research tree</span><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><br /></span><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">(Auto generated at runtime)</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br /><br /></p>

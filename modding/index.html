@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>File Viewer</title>
+    <style>
+      @font-face {
+        font-family: "Droid Sans Mono";
+        src: url("path/to/DroidSansMono.ttf") format("truetype");
+      }
+      body {
+        display: flex;
+        margin: 0;
+        background-color: #36393f;
+        color: #fff;
+        font-family: "Droid Sans Mono", monospace;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      table th,
+      table td {
+        padding: 10px;
+        text-align: left;
+        vertical-align: middle;
+      }
+
+      table tr:first-child td {
+        background-color: #222222;
+        font-weight: bold;
+      }
+
+      table td {
+        background-color: #6161619a;
+      }
+
+      table tr:nth-child(even) td {
+        background-color: #343434ba;
+      }
+
+      table tr:hover td {
+        background-color: #24242490;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("raw/bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        transform: scaleX(-1); /* Flip horizontally */
+        z-index: -1;
+        filter: blur(8px);
+      }
+
+      #menuContainer {
+        display: flex;
+        flex-direction: column;
+        min-width: 250px;
+        background-color: #2f3136a9;
+        min-height: 100vh;
+      }
+
+      #menuContainer span {
+        margin: 8px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #797171;
+      }
+
+      #menuContainer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #menuContainer li {
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      #menuContainer li:hover {
+        background-color: #40444b;
+      }
+
+      #contentContainer {
+        flex-grow: 1;
+        padding: 20px;
+        background-color: #202225db;
+        min-height: 100vh;
+      }
+
+      /* Mobile Styles */
+      @media (max-width: 767px) {
+        #menuContainer {
+          position: absolute;
+          top: 50px;
+          left: 0;
+          z-index: 1;
+          display: none;
+          width: 100%;
+          background-color: #2f3136;
+        }
+
+        #contentContainer {
+          padding-top: 50px;
+        }
+
+        #menuToggle {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 50px;
+          background-color: #2f3136;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #menuToggle button {
+          color: #fff;
+          font-size: 18px;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+
+        #menuToggle button:focus {
+          outline: none;
+        }
+
+        #menuToggle button:hover {
+          color: #bbb;
+        }
+
+        body.menu-open {
+          overflow: hidden;
+        }
+
+        body.menu-open #menuContainer {
+          display: flex;
+        }
+      }
+
+      /* Desktop Styles */
+      @media (min-width: 768px) {
+        #menuContainer {
+          display: flex;
+        }
+
+        #menuToggle {
+          display: none;
+        }
+      }
+      #site-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #site-logo img {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+      }
+      .section {
+        font-size: larger;
+      }
+      a,
+      a:visited {
+        color: #f3c046;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menuToggle">
+      <button onclick="toggleMenu()">Menu</button>
+    </div>
+
+    <div id="menuContainer">
+      <div id="site-logo">
+        <img src="raw/logo.png" />
+      </div>
+      <ul id="mainMenu"></ul>
+      <span class="section">Modding Guide</span>
+      <ul id="fileMenu_component_developer_guides"></ul>
+      <span class="section">Items</span>
+      <ul id="fileMenu_items"></ul>
+      <span class="section">User Interface</span>
+      <span><b>Inputs</b></span>
+      <ul id="fileMenu_component_inputs"></ul>
+      <span><b>Visuals</b></span>
+      <ul id="fileMenu_component_controls"></ul>
+      <span class="section"><b>Misc</b></span>
+      <ul id="fileMenu_misc"></ul>
+    </div>
+
+    <div id="contentContainer"></div>
+
+    <script>
+      const FILES_JSON = "raw/files.json";
+      const FILE_HTML = "raw/modding_{codename}.html";
+      const FILE_PREVIEW_IMG = "raw/modding_preview_{codename}.png";
+
+      function loadPage(codename) {
+        loadFile(codename);
+        updateURLHashbang(codename);
+        toggleMenu(); // Hide the menu after selecting a file
+      }
+      // Fetch files.json
+      fetch(FILES_JSON)
+        .then((response) => response.json())
+        .then((data) => {
+          // Extract file objects from the data
+          const files = Object.values(data);
+
+          // Sort files by their "id" field
+          files.sort((a, b) => a.value - b.value);
+
+          files.forEach((file) => {
+            let fileMenu = document.getElementById("fileMenu_" + file.type);
+            if (!fileMenu) {
+              fileMenu = document.getElementById("fileMenu_misc");
+            }
+            const codename = file.codename;
+            const listItem = document.createElement("li");
+            listItem.textContent = file.name;
+
+            // Add click event listener to load file on click
+            listItem.addEventListener("click", () => {
+              loadPage(codename);
+            });
+
+            fileMenu.appendChild(listItem);
+          });
+
+          // Check for hashbang in URL on page load
+          const hashbang = window.location.hash.substr(1);
+          if (hashbang) {
+            loadFile(hashbang);
+          } else {
+            // Load the first file by default
+            loadFile(files[0].codename);
+          }
+        })
+        .catch((error) => {
+          console.log("Failed to fetch files.json");
+          console.error(error);
+        });
+
+      async function loadImage(codename) {
+        const imgFileURL = FILE_PREVIEW_IMG.replace("{codename}", codename);
+
+        const response = await fetch(imgFileURL);
+        const blob = await response.blob();
+
+        if (blob.type !== "image/png") {
+          return;
+        }
+
+        console.log(blob);
+        const imageUrl = URL.createObjectURL(blob);
+        console.log(imageUrl);
+
+        let imgHTML = `<div><h3>Preview</h3><img src='${imageUrl}' /></div>`;
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(imgHTML, "text/html");
+        imgHTML = doc.body.firstChild;
+        let container = document.querySelectorAll("#contentContainer h3")[0];
+        container.parentNode.insertBefore(imgHTML, container.previousSibling);
+      }
+
+      function loadFile(codename) {
+        const fileURL = FILE_HTML.replace("{codename}", codename);
+
+        // Fetch the file
+        fetch(fileURL)
+          .then((response) => response.text())
+          .then((fileContent) => {
+            // Set the file content in the content container
+            document.getElementById("contentContainer").innerHTML = fileContent;
+            Prism.highlightAll();
+            loadImage(codename);
+          })
+          .catch((error) => {
+            console.log(`Failed to fetch file: ${codename}`);
+            console.error(error);
+          });
+      }
+
+      function updateURLHashbang(codename) {
+        window.location.hash = `#${codename}`;
+      }
+
+      function toggleMenu() {
+        const body = document.querySelector("body");
+        body.classList.toggle("menu-open");
+
+        const menuButton = document.querySelector("#menuToggle button");
+        if (body.classList.contains("menu-open")) {
+          menuButton.textContent = "Close";
+        } else {
+          menuButton.textContent = "Menu";
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="prism.css" />
+    <script src="prism.js"></script>
+  </body>
+</html>

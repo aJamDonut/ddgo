@@ -1,0 +1,10 @@
+<h2>Object Index</h2>
+<p>The Object Index can be used to store and find objects in the game. This is useful for performance and grouping objects.</p>
+<h3>Syntax</h3>
+<h4>Find a specific instance given its ID</h4>
+<pre class="language-javascript"><code>game.index.find(&lt;id&gt;);</code></pre>
+<h4>Get all instances with a given codename</h4>
+<pre class="language-javascript" style="word-spacing: 0px; font-size: medium; font-weight: 400;"><code>game.index.getIndex(&lt;codename&gt;);</code></pre>
+<h4>Add item to an index</h4>
+<p><strong>Note:</strong> If the index does not exist, it will create it.</p>
+<pre class="language-javascript" style="word-spacing: 0px; font-size: medium; font-weight: 400;"><code>game.index.addToIndex(&lt;indexName&gt;, &lt;object&gt;, &lt;id&gt;);</code></pre>

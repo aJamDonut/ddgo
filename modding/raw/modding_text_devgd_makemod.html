@@ -1,0 +1,44 @@
+<h2>Making a mod</h2>
+<p>Mods are autoloaded from within the "mods" folder in the main game folder.<br /><br />A mod is autoloaded by its definition in "config.mjs" and if it is enabled in the game then "init.mjs" is executed when the game is bootstrapping.<br /><br />Inside "init.mjs" you have the full ESM2020~ (Javascript) suite available and the global "game" object.<br /><br />Your mod is loaded just before the actual core game and engine is loaded. This is to ensure that any assets or pre-processing can occur at load time and ensure good performance once the game is loaded.<br /><br />I recommend never directly writing code into your "init.mjs" and instead importing files which have side effects (thus having a neater mod)<br /><br /><strong>Important:</strong> It is also important that all actions within the mod take place as a trigger for an event. This is to ensure that the code executes at the right time and has the right depencencies available to it.<br /><br />A couple of common events and their use are listed below. A full list of events can be find <a href="#text_devgd_events" target="_blank" rel="noopener">here</a><br /><br /></p>
+<pre class="language-javascript"><code>//Just before a new game session is started
+game.ee.on("new_session", () =&gt; {
+	//Good for any checks for the mod loading first time in a fresh game or existing game
+});
+
+//Just before the bootstrap is run
+game.ee.on("boostrap_pre", () =&gt; {
+	//Good for preparing things for loading during the loading screen
+	//Good for things than need to happen before all other mods and bootstraps are completed
+});
+
+//Just after the game has fully loaded and is showing the player the main menu
+game.ee.on("default_scene_loaded", () =&gt; {
+	//Good for notifying the user of something
+	//Good for things that need to take place before a new game is started or loaded
+});
+
+//After all mods have been bootstrapped (They may still have side effects)
+game.ee.on("boostrap_mods_complete", () =&gt; {
+	//Good for patching a conflict between two mods
+	//Good for checking if other mods are being used in the system
+});
+</code></pre>
+<p><br /><strong>Guide to creating a new mod</strong><br /><br /><strong>Step 1. </strong>Inside the "mods" folder, create a new folder and navigate into it, e.g. "adams_mod"<br /><br /><strong>Step 2. </strong>Create a new file called "config.mjs"<br /><br /><strong>Step 3. </strong>Modify the example below and paste it into "config.mjs"<br /><br /></p>
+<pre class="language-javascript"><code>export default {
+	name: "Adams mod",
+	codename: "mod_adams_mod",
+	version: "0.1.0",
+	author: "Jam Donut",
+	website: "https://jamdonut.com"
+};
+</code></pre>
+<p><strong>Step 4. </strong>Create a file named "init.mjs"<br /><br /><strong>Step 5.</strong> Add this boilerplate code to "init.mjs"</p>
+<pre class="language-javascript"><code>export default async () =&gt; {
+	//Trigger on every new session incase enabled mid-game
+	game.ee.on("new_session", () =&gt; {
+		game.notify("Your mod loaded!");
+	});
+	return;
+};
+</code></pre>
+<p></p>

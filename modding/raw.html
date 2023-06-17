@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fetch Files</title>
+  </head>
+  <body>
+    <div id="fileContainer"></div>
+
+    <script>
+      // Fetch files.json
+      fetch("raw/files.json")
+        .then((response) => response.json())
+        .then((data) => {
+          // Extract file objects from the data
+          const files = Object.values(data);
+
+          // Sort files by their "value" field or id field (0 does not count as a value)
+          files.sort((a, b) =>
+            a.value && b.value ? a.value - b.value : a.id - b.id
+          );
+          //files.reverse();
+
+          // Fetch and load each file into the page
+          files.forEach((file) => {
+            const codename = file.codename;
+            const fileURL = `raw/modding_${codename}.html`;
+
+            // Fetch individual file
+            fetch(fileURL)
+              .then((response) => response.text())
+              .then((fileContent) => {
+                // Create a new div element
+                const div = document.createElement("div");
+                div.innerHTML = `<h2>${codename}</h2><div>${fileContent}</div>`;
+
+                // Append the div to the fileContainer
+                document.getElementById("fileContainer").appendChild(div);
+              })
+              .catch((error) => {
+                console.log(`Failed to fetch file: ${codename}`);
+                console.error(error);
+              });
+          });
+        })
+        .catch((error) => {
+          console.log("Failed to fetch files.json");
+          console.error(error);
+        });
+    </script>
+  </body>
+</html>

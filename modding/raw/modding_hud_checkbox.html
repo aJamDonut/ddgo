@@ -1,0 +1,70 @@
+<h2>Checkbox</h2>
+<p>Provides the ability to toggle a feature on or off, aswell as multi choice options.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('hud_checkbox', HudCheckboxOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('hud_button', {
+ name: 'Enable Audio',
+ isEnabled: ()=&gt;{
+  game._SETTINGS['audio'];
+ },
+ onEnable: ()=&gt;{
+  game._SETTINGS['audio'] = true;
+ },
+ onDisable: ()=&gt;{
+  game._SETTINGS['audio'] = false;
+ }
+});​</code></pre>
+<h3>HudCheckboxOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 88px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">name</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"Disabled" | "Enabled"</td>
+<td style="width: 53.5447%; height: 22px;">Text to show on the button</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">isEnabled</td>
+<td style="width: 9.07168%; height: 22px;">function</td>
+<td style="width: 16.9195%; height: 22px;">undefined</td>
+<td style="width: 53.5447%; height: 22px;">Function to check if it is enabled</td>
+</tr>
+<tr>
+<td style="width: 20.4641%;">onEnable</td>
+<td style="width: 9.07168%;">function</td>
+<td style="width: 16.9195%;">undefined</td>
+<td style="width: 53.5447%;">Function to run when enabled</td>
+</tr>
+<tr>
+<td style="width: 20.4641%;">onDisable</td>
+<td style="width: 9.07168%;">function</td>
+<td style="width: 16.9195%;">undefined</td>
+<td style="width: 53.5447%;">Function to run when disabled</td>
+</tr>
+<tr>
+<td style="width: 20.4641%;">w</td>
+<td style="width: 9.07168%;">number</td>
+<td style="width: 16.9195%;">150</td>
+<td style="width: 53.5447%;">Width of the button</td>
+</tr>
+<tr>
+<td style="width: 20.4641%;">h</td>
+<td style="width: 9.07168%;">number</td>
+<td style="width: 16.9195%;">40</td>
+<td style="width: 53.5447%;">Height of the button</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">lblW</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">150</td>
+<td style="width: 53.5447%; height: 22px;">Width of the label</td>
+</tr>
+</tbody>
+</table>
