@@ -3,13 +3,13 @@
 <h3>Syntax</h3>
 <h4>All blueprints are stored on the _BLUEPRINTS global object</h4>
 <p><strong>Important:</strong> You should never directly edit or retrieve a blueprint from the _BLUEPRINTS object, instead use the functions provided below.</p>
-<pre class="language-javascript"><code>_BLUEPRINTS[&lt;BLUEPRINT_TYPE&gt;][&lt;BLUEPRINT_CODENAME&gt;]</code></pre>
+<pre class="language-javascript"><code>_BLUEPRINTS[][]</code></pre>
 <h4>Get a blueprint</h4>
 <p><strong>Important:</strong> If you modify the blueprint after you get it, there will be side effects</p>
-<pre class="language-javascript" style="word-spacing: 0px; font-size: medium; font-weight: 400;"><code>game.getBlueprint(&lt;BLUEPRINT_TYPE&gt;, &lt;BLUEPRINT_CODENAME&gt;);</code></pre>
+<pre class="language-javascript" style="word-spacing: 0px; font-size: medium; font-weight: 400;"><code>game.getBlueprint(, );</code></pre>
 <h4>Add a new blueprint</h4>
 <p><strong>Note:</strong> The BLUEPRINT_DEFINITION for each BLUEPRINT_TYPE is different, to check a blueprint definition, simple check an existing definition within that blueprint type.</p>
-<pre class="language-javascript" style="word-spacing: 0px; font-size: medium; font-weight: 400;"><code>game.addBlueprint(&lt;BLUEPRINT_TYPE&gt;, &lt;BLUEPRINT_DEFINTION&gt;);</code></pre>
+<pre class="language-javascript" style="word-spacing: 0px; font-size: medium; font-weight: 400;"><code>game.addBlueprint(, );</code></pre>
 <h3 dir="ltr" style="line-height: 1.38; margin-top: 16pt; margin-bottom: 4pt;"><span style="font-size: 14pt; font-family: Arial; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Blueprints reference</span><b style="font-weight: normal;" id="docs-internal-guid-e8781dce-7fff-527b-3e30-fb90905266b3"></b></h3>
 <div dir="ltr" style="margin-left: 0pt;" align="center">
 <table border="1pt" cellpadding="5pt" style="border-collapse: collapse; height: 341px; border-color: initial; border-style: none; float: left;"><colgroup><col width="333" /><col width="333" /></colgroup>

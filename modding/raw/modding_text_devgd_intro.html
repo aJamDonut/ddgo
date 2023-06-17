@@ -1,1 +1,30 @@
-Welcome to modding guid
+<h2>Introduction</h2>
+<h3>Welcome!</h3>
+Welcome to Jams modding guide for Dead Desert and generally any games I make.<br /><br />Before we jump straight into code let's talk quickly about how the game works.<br /><br />The game is written on top of a custom engine known as "ABE", aka the core.<br /><br />When ABE is loading, it see's the game a bit like a mod, and so loads the game on top of the engine.<br /><br />When we're modding the game, we're coding in exactly the same way as the game itself. We are adding or modding functionality in the core.<br /><br /><strong>Note:</strong> ABE stands for Arcade Builder Engine, an older game I made<br /><br />
+<table>
+<tbody>
+<tr>
+<td><img src="img/bootstrap.png" alt="" /></td>
+</tr>
+</tbody>
+</table>
+<h3>The tech details</h3>
+<h4>Code</h4>
+<p>ABE and DD are both written in Vanilla Javascript without any external frameworks, although some libraries are used - such as PixiJS. This means that mods are written in Javascript.<br /><br />You can write mods using modern ESM code although the game and ABE object will remain a global object to allow for ease of use by all mods and developers.<br /><br />If you need to load an asset into the game, e.g. a font, sound asset, image or otherwise - you must ensure you use the built in loader functionality, e.g. Add blueprints. Do not simply use fetch requests or other loaders. Mods that do not use the built in loader are extremely discouraged.</p>
+<h4>Data</h4>
+<p>Data is stored in either Javascript objects in real javascript files with the .mjs extension or in plaintext JSON files with the .json extension</p>
+<h4>Visuals</h4>
+<p>Dead Desert uses spritesheets (called "TILESETS" in the engine) for the 2D images. It also uses Spine for some more advanced animations<br /><br />New spritesheets can be added through adding a blueprint to the TILESETS blueprints.</p>
+<h4>Audio</h4>
+<p>Sound files are in .mp3 format for easy exchangability. ABE uses Howler.js under the hood and so anything available there is available to modders.<br /><br />New Audio files can be added through adding a blueprint to the AUDIO blueprints.</p>
+<h4>Rendering</h4>
+<p>ABE uses Pixi.JS as its core renderer. Anything you can do in PixiJS you can do inside the engine.</p>
+<h4>User Interface</h4>
+<p>ABE uses a highly custom componentised User Interface written in Javascript. Similar to things like Winforms, QT and TK. You will need to get familiar and comfortable using X, Y positions rather than HTML based user interfaces.</p>
+<h4>Server</h4>
+<p>Wait.. What? This single player game has servers? Kinda. Because of Javascript technology being single-threaded, the game utilises Web Workers in a client-server pattern whereby a lot of Pathing, AI Logic and Physics logic actually take place in their own "servers" and simply sync to the games renderer.</p>
+<p></p>
+<h3>So what's possible?</h3>
+<p>Pretty much everything. Okay maybe not. I dunno. If I can do it, likely you can.<br /><br />It may be the case that a particular event or object you need to mod is not exposed. If this is the case I'm sure there are hacks around it. But if it is missing please ensure you request a new event be added to the engine or game so that you can code the feature you want.<br /><br /></p>
+<h3>So what's REEEALLY possible?</h3>
+<p>Right now it would be quite easy to add any item you can imagine to the game, something the player can craft, use as a weapon, or place it in the world. It could be a custom crafting bench or a new backpack or even a quest item.<br /><br />You could also quite easily add a dialog and an NPC that would use it. Creating a custom spawner for an NPC, placing it in the world and triggering the dialog when a player talks to the NPC.<br /><br />Another last example would be overriding the UI. As a UI is generated you can choose to override and change certain aspects of the UI. Equally you can create new UI elements and show them to the user when you wish.</p>
