@@ -1,0 +1,44 @@
+<h2>Inventory Grid</h2>
+<p>Displays an inventory grid which accepts items of a given size xBlocks x yBlocks.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('inventoryGrid', InventoryGridOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>const inventoryGrid = game.render.component('inventoryGrid', {
+    xBlocks: 4,
+    yBlocks: 4,
+    inventory: playerInventory
+});​
+inventoryGrid.x = 10;
+inventoryGrid.y = 10;
+pane.addChild(inventoryGrid);</code></pre>
+<h3>InventoryGridOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 352px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">xBlocks</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">1</td>
+<td style="width: 53.5447%; height: 22px;">Number of blocks in the x-axis</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">yBlocks</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">1</td>
+<td style="width: 53.5447%; height: 22px;">Number of blocks in the y-axis</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">inventory</td>
+<td style="width: 9.07168%; height: 22px;">object</td>
+<td style="width: 16.9195%; height: 22px;">undefined</td>
+<td style="width: 53.5447%; height: 22px;">The inventory object to display</td>
+</tr>
+</tbody>
+</table>
+<h3>Notes for ChatGPT or Open AI Assistants:</h3>
+<p style="font-size: medium; font-weight: 400;">If the user asks for an inventory or inventory with&nbsp;<number>x<number>&nbsp;slots, you can assume they want to use this component. xBlocks and yBlocks are the equivalent of 2x2 being xBlocks = 2, yBlocks = 2</number></number></p>

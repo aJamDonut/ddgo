@@ -1,18 +1,16 @@
-<h2>Button</h2>
-<p>Provides a clickable button component with customizable options.</p>
+<h2>Radio</h2>
+<p>Provides the ability to select a single option from a group of options.</p>
 <h3>Syntax</h3>
-<pre class="language-javascript"><code>game.render.component('hud_button', HudButtonOptions);​</code></pre>
+<pre class="language-javascript"><code>game.render.component('hud_radio', HudRadioOptions);​</code></pre>
 <h3>Example</h3>
-<pre class="language-javascript"><code>game.render.component('hud_button', {
-    name: 'Click Me',
-    w: 200,
-    h: 50,
-    fill: '0xff0000',
+<pre class="language-javascript"><code>game.render.component('hud_radio', {
+    name: 'Option 1',
+    isChecked: true,
     onClick: () =&gt; {
-        console.log('Button clicked');
+        console.log('Option 1 selected');
     }
 });​</code></pre>
-<h3>HudButtonOptions Reference:</h3>
+<h3>HudRadioOptions Reference:</h3>
 <table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
 <tbody>
 <tr style="height: 22px;">
@@ -25,37 +23,43 @@
 <td style="width: 20.4641%; height: 22px;">name</td>
 <td style="width: 9.07168%; height: 22px;">string</td>
 <td style="width: 16.9195%; height: 22px;">"NONAME"</td>
-<td style="width: 53.5447%; height: 22px;">Text to display on the button</td>
+<td style="width: 53.5447%; height: 22px;">Text to display next to the radio button</td>
 </tr>
 <tr style="height: 22px;">
 <td style="width: 20.4641%; height: 22px;">w</td>
 <td style="width: 9.07168%; height: 22px;">number</td>
 <td style="width: 16.9195%; height: 22px;">150</td>
-<td style="width: 53.5447%; height: 22px;">Width of the button</td>
+<td style="width: 53.5447%; height: 22px;">Width of the radio button</td>
 </tr>
 <tr style="height: 22px;">
 <td style="width: 20.4641%; height: 22px;">h</td>
 <td style="width: 9.07168%; height: 22px;">number</td>
 <td style="width: 16.9195%; height: 22px;">40</td>
-<td style="width: 53.5447%; height: 22px;">Height of the button</td>
+<td style="width: 53.5447%; height: 22px;">Height of the radio button</td>
 </tr>
 <tr style="height: 22px;">
 <td style="width: 20.4641%; height: 22px;">pass</td>
 <td style="width: 9.07168%; height: 22px;">boolean</td>
 <td style="width: 16.9195%; height: 22px;">false</td>
-<td style="width: 53.5447%; height: 22px;">Whether to pass an object</td>
+<td style="width: 53.5447%; height: 22px;">Whether to pass the radio button object as an argument in the onClick function</td>
 </tr>
 <tr style="height: 22px;">
 <td style="width: 20.4641%; height: 22px;">fill</td>
 <td style="width: 9.07168%; height: 22px;">string</td>
 <td style="width: 16.9195%; height: 22px;">"0x3d3d3d"</td>
-<td style="width: 53.5447%; height: 22px;">Color fill of the button to match the theme</td>
+<td style="width: 53.5447%; height: 22px;">Color fill of the radio button</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">isChecked</td>
+<td style="width: 9.07168%; height: 22px;">boolean</td>
+<td style="width: 16.9195%; height: 22px;">false</td>
+<td style="width: 53.5447%; height: 22px;">Whether the radio button is initially checked</td>
 </tr>
 <tr style="height: 22px;">
 <td style="width: 20.4641%; height: 22px;">onClick</td>
 <td style="width: 9.07168%; height: 22px;">function</td>
 <td style="width: 16.9195%; height: 22px;">undefined</td>
-<td style="width: 53.5447%; height: 22px;">Function to run when the button is clicked</td>
+<td style="width: 53.5447%; height: 22px;">Function to run when the radio button is clicked</td>
 </tr>
 </tbody>
 </table>

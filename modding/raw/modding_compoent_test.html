@@ -1,0 +1,46 @@
+<h2>List Selector</h2>
+<p>Provides a UI component for selecting items from two lists and moving them between the lists.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('component_list_selector', ListSelectorOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('component_list_selector', {
+    w: 300,
+    h: 200,
+    leftList: ['left', 'two', 'three'],
+    rightList: ['another1']
+});​</code></pre>
+<h3>ListSelectorOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 154px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">w</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">300</td>
+<td style="width: 53.5447%; height: 22px;">Width of the list selector</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">h</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">200</td>
+<td style="width: 53.5447%; height: 22px;">Height of the list selector</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">leftList</td>
+<td style="width: 9.07168%; height: 22px;">array</td>
+<td style="width: 16.9195%; height: 22px;">['left', 'two', 'three']</td>
+<td style="width: 53.5447%; height: 22px;">Items to display in the left list</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">rightList</td>
+<td style="width: 9.07168%; height: 22px;">array</td>
+<td style="width: 16.9195%; height: 22px;">['another1']</td>
+<td style="width: 53.5447%; height: 22px;">Items to display in the right list</td>
+</tr>
+</tbody>
+</table>

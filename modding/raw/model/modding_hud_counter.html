@@ -1,0 +1,63 @@
+<h2>Counter</h2>
+<p>Provides a numerical counter with adjustable increments and a maximum and minimum value. Includes buttons to increase and decrease the count.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('hud_counter', CounterOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('hud_counter', {
+  ref: {exampleCount: 0},
+  value: 'exampleCount',
+  min: 0,
+  max: 10,
+  multi: 2,
+  w: 200
+});​</code></pre>
+<h3>CounterOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 154px;">
+<thead>
+<tr style="height: 22px;">
+<th style="width: 20%; height: 22px;">Property</th>
+<th style="width: 10%; height: 22px;">Data type</th>
+<th style="width: 45%; height: 22px;">Description</th>
+<th style="width: 25%; height: 22px;">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 22px;">
+<td style="height: 22px;">ref</td>
+<td style="height: 22px;">object</td>
+<td style="height: 22px;">The object that contains the count value.</td>
+<td style="height: 22px;">undefined</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">value</td>
+<td style="height: 22px;">string</td>
+<td style="height: 22px;">The key of the count value in the ref object.</td>
+<td style="height: 22px;">undefined</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">min</td>
+<td style="height: 22px;">number</td>
+<td style="height: 22px;">The minimum value the count can be.</td>
+<td style="height: 22px;">0</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">max</td>
+<td style="height: 22px;">number</td>
+<td style="height: 22px;">The maximum value the count can be.</td>
+<td style="height: 22px;">10</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">multi</td>
+<td style="height: 22px;">number</td>
+<td style="height: 22px;">The amount by which the count changes with each button press.</td>
+<td style="height: 22px;">1</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 22px;">w</td>
+<td style="height: 22px;">number</td>
+<td style="height: 22px;">The width of the counter element.</td>
+<td style="height: 22px;">100</td>
+</tr>
+</tbody>
+</table>
+<div></div>

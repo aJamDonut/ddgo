@@ -1,0 +1,54 @@
+<h2>Slider</h2>
+<p>Provides a draggable slider component that allows users to select a value within a specified range.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('hud_slider', HudSliderOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('hud_slider', {
+    name: 'Volume',
+    w: 300,
+    h: 10,
+    min: 0,
+    max: 100,
+    value: 50
+});​</code></pre>
+<h3>HudSliderOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">w</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">300</td>
+<td style="width: 53.5447%; height: 22px;">Width of the slider</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">h</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">10</td>
+<td style="width: 53.5447%; height: 22px;">Height of the slider</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">min</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">1</td>
+<td style="width: 53.5447%; height: 22px;">Minimum value of the slider</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">max</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">100</td>
+<td style="width: 53.5447%; height: 22px;">Maximum value of the slider</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">value</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">0</td>
+<td style="width: 53.5447%; height: 22px;">Initial value of the slider</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,16 @@
+<h2>Moving and Tweens</h2>
+<p>UI Components, Sprites and Items can be moved on screen with Tweens. This is different from moving with pathfinding. This should only be used for moving UI Component or in game animations.<br /><br />All tweening is implemented uses CreateJS TweenJS. Any functionality in TweenJS exists here.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>const tween = createjs.TWEEN.get({ObjectToTween}, {TweenOptions}).to({TweenToObject}, {TweenDuration}, {Easing})</code></pre>
+<h3>Example</h3>
+<h4>Slide an item from one side to the other</h4>
+<pre class="language-javascript"><code>const tween = createjs.Tween.get(obj, {override: false, loop: false}).to(
+ {
+  x: opts.x,
+  y: opts.y
+ },
+ opts.duration || 100,
+ createjs.Ease.quintOut
+);</code></pre>
+<h3>Notes for ChatGPT or Open AI Assistants</h3>
+You can assume that TWEEN.TWEEN in our system is called createjs.TWEEN and contains exactly the same functionality as TWEEN.TWEEN.<br /><br />If the user ever asks to "shake" "move", "slide" or otherwise change the position of an object, always use a tween function.

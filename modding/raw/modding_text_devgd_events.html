@@ -6,590 +6,615 @@
  //...Your code here
 });</code></pre>
 <em style="color: #f8f8f2; font-weight: 400;"><strong>Important:&nbsp;</strong>Don't forget, in javascript objects are always passed by reference. If you modify the object being passed it will have side effects<br /></em>
-<h4>Create a new event</h4>
+<h4>Trigger a new event</h4>
 <pre class="language-javascript" style="word-spacing: 0px; font-size: medium; font-weight: 400;"><code>game.ee.emit(&lsquo;event-name&rsquo;, passthru);</code></pre>
 <h3><br />List of Events<br /><br /><span style="font-weight: normal;"></span></h3>
-<div dir="ltr" style="margin-left: 0pt;" align="left">
 <table style="border: none;"><colgroup><col width="317" /><col width="421" /><col width="290" /></colgroup>
 <tbody>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Grid &amp; World</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">grid-loading</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Grid has started loading</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">undefined</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">grid-loaded</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Grid has loaded</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">undefined</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">leveleditor-init</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Before level editor initiated</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">undefined</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">newgame-init</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Before new game is initiated</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">options</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Input</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">leftclick-up</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User released left click on screen</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">rightclick-up</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User released right click on screen</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">right-doubleclick</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User right double click (2 quick clicks)</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">middleclick-up</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User released middle click on the screen</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">leftclick-down</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User left clicked down on screen</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">middleclick-up</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Use released middle click on screen</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">middleclick-down</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User middle clicked down on screen</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">world-rightclick-up</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User released right click on the world</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">world-rightclick-down</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User right clicked down onto the world</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">world-leftclick-up</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User released left click on the world</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">world-leftclick-down</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User left clicked down onto the world</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">keyup</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User released a key</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">keydown</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User pressed down a key</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">keyup-<event.which></event.which></span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User released a key with &ldquo;key code&rdquo;</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">keydown-<event.which></event.which></span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User pressed down a key with &ldquo;key code&rdquo;</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">window.event</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">newgame-clicked</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">User clicked &ldquo;New game&rdquo; button on main screen</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Life</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">lifeobject_created</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">When an NPC is spawned</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">BaseLife</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">lifeobject_getcontextmenulinks</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">When showing an NPC right click menu</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">contentMenuLinks</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">lifeobject_tick</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Every tick for NPC/Player</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Life Object</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">lifeobject_tick_<cleanname></cleanname></span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Every ticket for NPC/Player given clean name</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Life Object</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">World Objects</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">itemcontainer_created</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">When a world object is spawned</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">WorldObject</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">itemcontainer_created_<codename></codename></span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">When a world object of codename is spawned</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">WorldObject</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Inventories</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">inventory-additem</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">When an item is added to any inventory</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">{item, inventory}</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">inventory-removeitem</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">When an item is removed from any inventory</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">{item, inventory}</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">UI Components</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">render_component</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">When any component is rendered</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">PIXI.Container</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">render_component_<codename></codename></span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">When any component of given codename is rendered</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">PIXI.Container</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 22.39892578125pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Session</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">new_session</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Started (or loaded) a new game session (not a new game)</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">removed_cash</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Removed player cash</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">amount</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">added_cash</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Added player cash</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">amount</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">unlocked_recipe</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Unlocked a recipe</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">recipe_name</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">select_pawn</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Selected a pawn (Could be multiple pawns triggered multiple times)</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">LifeObject</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">deselect_pawn</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Unselected a pawn</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">LifeObject</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">set_command</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Set command for this pawn</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">pawn, command, options, pawnCount</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">set_main_pawn</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Set this life as the main life</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">LifeObject</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">add_player_pawn</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Added life to the players team</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">LifeObject</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">remove_player_pawn</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Remove life from the players team</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">LifeObject</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-weight: bold; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Engine</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">bootstrap_pre</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Before bootstrap has run</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">Bootstrap array</span></p>
 </td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">bootstrap_post</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">After bootstrap has run</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">bootstrap_mods_complete</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">After mods bootstrapped</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">default_scene_loaded</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;">
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;">
 <p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; vertical-align: baseline; white-space-collapse: preserve;">When the core is fully loaded and loads the first screen</span></p>
 </td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
 </tr>
 <tr style="height: 0pt;">
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
-<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 302.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 406.688px;"></td>
+<td style="border-width: 1pt; border-color: #999988; vertical-align: top; padding: 5pt; overflow: hidden; overflow-wrap: break-word; width: 275.688px;"></td>
+</tr>
+</tbody>
+</table>
+<h3 dir="ltr" align="left" style="margin-left: 0pt;"><br />Events from UI Components</h3>
+<div dir="ltr" style="margin-left: 0pt;" align="left"><br />
+<table border="1" style="border-collapse: collapse; width: 100%; height: 66px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 33.3333%; height: 22px;">Basic Game Start (hud_basic_gamestart)</td>
+<td style="width: 33.3333%; height: 22px;"></td>
+<td style="width: 33.3333%; height: 22px;"></td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 33.3333%; height: 22px;">get_newstart_items</td>
+<td style="width: 33.3333%; height: 22px;">An array of titles to show on the game start</td>
+<td style="width: 33.3333%; height: 22px;">["Human", "Robot", ...your additions]</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 33.3333%; height: 22px;">get_newstart_text</td>
+<td style="width: 33.3333%; height: 22px;">An array of texts tied to game starts</td>
+<td style="width: 33.3333%; height: 22px;">["A human start", "Robot start", ...your additions]</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">get_newstart_optioncallbacks</td>
+<td style="width: 33.3333%;">An options whos keys point to callbacks for gamestarts</td>
+<td style="width: 33.3333%;">{"Human":()=&gt;{CodeRunsHere}, ...your additions}</td>
 </tr>
 </tbody>
 </table>

@@ -1,0 +1,62 @@
+<h2>A or B Input</h2>
+<p>Provides a user interface component for selecting between two options.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('hud_aorb_input', HudAorBInputOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('hud_aorb_input', {
+    w: 200,
+    h: 50,
+    option1: 'Option A',
+    option2: 'Option B',
+    defaultValue: 0,
+    onChange: (selectedOption) =&gt; {
+        console.log('Selected option:', selectedOption);
+    }
+});​</code></pre>
+<h3>HudAorBInputOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">w</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">150</td>
+<td style="width: 53.5447%; height: 22px;">Width of the component</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">h</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">40</td>
+<td style="width: 53.5447%; height: 22px;">Height of the component</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">option1</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"op1"</td>
+<td style="width: 53.5447%; height: 22px;">Text to display for option 1</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">option2</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"op2"</td>
+<td style="width: 53.5447%; height: 22px;">Text to display for option 2</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">defaultValue</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">0</td>
+<td style="width: 53.5447%; height: 22px;">Default selected option (0 for option 1, 1 for option 2)</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">onChange</td>
+<td style="width: 9.07168%; height: 22px;">function</td>
+<td style="width: 16.9195%; height: 22px;">null</td>
+<td style="width: 53.5447%; height: 22px;">Function to be called when the selected option changes</td>
+</tr>
+</tbody>
+</table>

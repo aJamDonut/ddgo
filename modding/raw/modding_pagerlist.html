@@ -1,0 +1,75 @@
+<h2>Pager List Component</h2>
+<p>A component that displays a list of items in pages, allowing the user to navigate through the pages.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('pagerlist', PagerListOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('pagerlist', {
+    items: [item1, item2, item3],
+    itemsPerPage: 5,
+    page: 1,
+    ticks: true
+});​</code></pre>
+<h3>PagerListOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">items</td>
+<td style="width: 9.07168%; height: 22px;">array</td>
+<td style="width: 16.9195%; height: 22px;">[]</td>
+<td style="width: 53.5447%; height: 22px;">Array of items to display</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">itemsPerPage</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">10</td>
+<td style="width: 53.5447%; height: 22px;">Number of items to display per page</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">page</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">1</td>
+<td style="width: 53.5447%; height: 22px;">Current page number</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">ticks</td>
+<td style="width: 9.07168%; height: 22px;">boolean</td>
+<td style="width: 16.9195%; height: 22px;">false</td>
+<td style="width: 53.5447%; height: 22px;">If true, the component won't refresh when changing pages</td>
+</tr>
+</tbody>
+</table>
+<h3>PagerList Methods:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 88px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Method</td>
+<td style="width: 9.07168%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">refresh</td>
+<td style="width: 9.07168%; height: 22px;">Refreshes the component, updating the displayed items and page buttons</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">pageUp</td>
+<td style="width: 9.07168%; height: 22px;">Moves to the next page, if available</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">pageDown</td>
+<td style="width: 9.07168%; height: 22px;">Moves to the previous page, if available</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">empty</td>
+<td style="width: 9.07168%; height: 22px;">Removes all items from the component</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">addPageButtons</td>
+<td style="width: 9.07168%; height: 22px;">Adds custom page buttons to the component</td>
+</tr>
+</tbody>
+</table>

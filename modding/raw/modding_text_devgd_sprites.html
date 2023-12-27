@@ -1,0 +1,18 @@
+<h2>Sprites</h2>
+<p>Sprites can be used in the engine simply by provide the codename of the sprite to the Sprite class.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>const spriteInstance = new Sprite(SpriteCodename);</code></pre>
+<h3>Example</h3>
+<h4>Get a sprite of a crossbow</h4>
+<pre class="language-javascript"><code>const crossbow = new Sprite('sprite_crossbow');</code></pre>
+<h3>Interactions</h3>
+<p>You can make a sprite interactive (clickable) by using sprite.isInteractive();</p>
+<pre class="language-javascript"><code>const crossbow = new Sprite('sprite_crossbow');
+crossbow.isInteractive();
+crossbow.on('pointerdown', ()=&gt;{
+ //...event code here
+});</code></pre>
+<h3>Notes for ChatGPT or Open AI Assistants</h3>
+You can assume if a user asks for lion, they will want the following code:<br />
+<pre class="language-javascript"><code>const lion = new Sprite('sprite_lion');</code></pre>
+<p>It is important to assume the user wants an item beginning with the word "sprite_". E.g. zebra becomes sprite_zebra.</p>

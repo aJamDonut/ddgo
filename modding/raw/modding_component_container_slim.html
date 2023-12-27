@@ -1,0 +1,81 @@
+<h2>Slim Container</h2>
+<p>Creates a slim pane with optional title and close button.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('component_container_slim', SlimContainerOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('drawSlimPane', {
+    x: 100,
+    y: 100,
+    w: 200,
+    h: 100,
+    title: 'Settings',
+    showX: true,
+    titleW: 180,
+    titleH: 60,
+    name: 'settingsPane'
+});​</code></pre>
+<h3>SlimContainerOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">x</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">0</td>
+<td style="width: 53.5447%; height: 22px;">X position of the pane</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">y</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">0</td>
+<td style="width: 53.5447%; height: 22px;">Y position of the pane</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">w</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">64</td>
+<td style="width: 53.5447%; height: 22px;">Width of the pane</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">h</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">64</td>
+<td style="width: 53.5447%; height: 22px;">Height of the pane</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">title</td>
+<td style="width: 9.07168%; height: 22px;">string | false</td>
+<td style="width: 16.9195%; height: 22px;">false</td>
+<td style="width: 53.5447%; height: 22px;">Title text to display on the pane</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">showX</td>
+<td style="width: 9.07168%; height: 22px;">boolean</td>
+<td style="width: 16.9195%; height: 22px;">false</td>
+<td style="width: 53.5447%; height: 22px;">Whether to show the close button</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">titleW</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">180</td>
+<td style="width: 53.5447%; height: 22px;">Width of the title pane</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">titleH</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">60</td>
+<td style="width: 53.5447%; height: 22px;">Height of the title pane</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">name</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"NONAMEADDED"</td>
+<td style="width: 53.5447%; height: 22px;">Name of the pane for identification</td>
+</tr>
+</tbody>
+</table>

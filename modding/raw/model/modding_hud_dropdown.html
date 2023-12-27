@@ -1,0 +1,67 @@
+<h2>Dropdown</h2>
+<p>Provides a dropdown component with selectable items.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('hud_dropdown', HudDropdownOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('hud_dropdown', {
+    name: 'Dropdown Example',
+    x: 100,
+    y: 200,
+    w: 200,
+    h: 40,
+    items: ['Option 1', 'Option 2', 'Option 3'],
+    selected: 'Option 2'
+});​</code></pre>
+<h3>HudDropdownOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 212px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">name</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"NONAME"</td>
+<td style="width: 53.5447%; height: 22px;">Name of the dropdown component</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">x</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">0</td>
+<td style="width: 53.5447%; height: 22px;">X-coordinate of the dropdown component</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">y</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">0</td>
+<td style="width: 53.5447%; height: 22px;">Y-coordinate of the dropdown component</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">w</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">150</td>
+<td style="width: 53.5447%; height: 22px;">Width of the dropdown component</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">h</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">40</td>
+<td style="width: 53.5447%; height: 22px;">Height of the dropdown component</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">items</td>
+<td style="width: 9.07168%; height: 22px;">array</td>
+<td style="width: 16.9195%; height: 22px;">['test1', 'test2']</td>
+<td style="width: 53.5447%; height: 22px;">Array of items to display in the dropdown</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">selected</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">'test2'</td>
+<td style="width: 53.5447%; height: 22px;">Default selected item in the dropdown</td>
+</tr>
+</tbody>
+</table>

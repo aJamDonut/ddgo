@@ -1,0 +1,43 @@
+<h2>Inventory Grid</h2>
+<p>Displays an inventory grid with customizable number of columns and rows.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('component_inventory_grid', InventoryGridOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('component_inventory_grid', {
+    cols: 3,
+    rows: 4,
+    inventory: {
+        item1: {name: 'Sword', quantity: 1},
+        item2: {name: 'Shield', quantity: 2},
+        item3: {name: 'Potion', quantity: 5}
+    }
+});​</code></pre>
+<h3>InventoryGridOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 88px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">cols</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">2</td>
+<td style="width: 53.5447%; height: 22px;">Number of columns in the grid</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">rows</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">2</td>
+<td style="width: 53.5447%; height: 22px;">Number of rows in the grid</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">inventory</td>
+<td style="width: 9.07168%; height: 22px;">object</td>
+<td style="width: 16.9195%; height: 22px;">{}</td>
+<td style="width: 53.5447%; height: 22px;">Object representing the inventory items</td>
+</tr>
+</tbody>
+</table>

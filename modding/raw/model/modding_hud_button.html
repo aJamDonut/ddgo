@@ -1,0 +1,60 @@
+<h2>Button</h2>
+<p>A clickable button with customizable text and width.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('hud_button', HudButtonOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('hud_button', {
+     name: 'Click Me',
+     w: 200,
+     h: 50,
+     onClick: () =&gt; {
+             // Action to perform on click
+        }
+     });​</code></pre>
+<h3>HudButtonOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 198px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.2686%; height: 22px;">Property</td>
+<td style="width: 9.15527%; height: 22px;">Data type</td>
+<td style="width: 15.9204%; height: 22px;">Default value</td>
+<td style="width: 54.8263%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.2686%; height: 22px;">name</td>
+<td style="width: 9.15527%; height: 22px;">string</td>
+<td style="width: 15.9204%; height: 22px;">"NONAME"</td>
+<td style="width: 54.8263%; height: 22px;">Text to display on the button</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.2686%; height: 22px;">w</td>
+<td style="width: 9.15527%; height: 22px;">number</td>
+<td style="width: 15.9204%; height: 22px;">150</td>
+<td style="width: 54.8263%; height: 22px;">Width of the button</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.2686%; height: 22px;">h</td>
+<td style="width: 9.15527%; height: 22px;">number</td>
+<td style="width: 15.9204%; height: 22px;">40</td>
+<td style="width: 54.8263%; height: 22px;">Height of the button</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.2686%; height: 22px;">pass</td>
+<td style="width: 9.15527%; height: 22px;">boolean</td>
+<td style="width: 15.9204%; height: 22px;">false</td>
+<td style="width: 54.8263%; height: 22px;">Whether or not to pass the button instance to the onClick function</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.2686%; height: 22px;">lblW</td>
+<td style="width: 9.15527%; height: 22px;">number</td>
+<td style="width: 15.9204%; height: 22px;">150</td>
+<td style="width: 54.8263%; height: 22px;">Width of the text label on the button</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.2686%; height: 22px;">onClick</td>
+<td style="width: 9.15527%; height: 22px;">function</td>
+<td style="width: 15.9204%; height: 22px;"></td>
+<td style="width: 54.8263%; height: 22px;">Function to execute when the button is clicked</td>
+</tr>
+</tbody>
+</table>

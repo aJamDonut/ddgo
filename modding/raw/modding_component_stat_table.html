@@ -1,0 +1,43 @@
+<h2>Stat Table</h2>
+<p>Displays a table of stats for an item, such as armor or weapon.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('component_stat_table', StatTableOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('component_stat_table', {
+    stats: {
+        'maxSpeed': 10,
+        'maxHP': 100,
+        'maxWeight': 50
+    },
+    oWidth: 500,
+    showResourceIcons: true
+});​</code></pre>
+<h3>StatTableOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 88px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">stats</td>
+<td style="width: 9.07168%; height: 22px;">object</td>
+<td style="width: 16.9195%; height: 22px;">{}</td>
+<td style="width: 53.5447%; height: 22px;">Object containing the stats to display in the table</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">oWidth</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">450</td>
+<td style="width: 53.5447%; height: 22px;">Width of the table</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">showResourceIcons</td>
+<td style="width: 9.07168%; height: 22px;">boolean</td>
+<td style="width: 16.9195%; height: 22px;">true</td>
+<td style="width: 53.5447%; height: 22px;">Whether to show resource icons for each stat</td>
+</tr>
+</tbody>
+</table>

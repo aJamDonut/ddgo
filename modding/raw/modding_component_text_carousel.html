@@ -1,0 +1,70 @@
+<h2>Text Carousel</h2>
+<p>Displays a carousel of text items with navigation buttons to scroll through the items.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('component_text_carousel', TextCarouselOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('component_text_carousel', {
+    w: 500,
+    h: 500,
+    items: ['Title 1', 'Title 2', 'Title 3'],
+    bottomTexts: ['Here is some example text', 'Example 2', 'Example 3']
+});​</code></pre>
+<h3>TextCarouselOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">w</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">500</td>
+<td style="width: 53.5447%; height: 22px;">Width of the carousel</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">h</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">500</td>
+<td style="width: 53.5447%; height: 22px;">Height of the carousel</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">items</td>
+<td style="width: 9.07168%; height: 22px;">array</td>
+<td style="width: 16.9195%; height: 22px;">['Title 1', 'Title 2', 'Title 3']</td>
+<td style="width: 53.5447%; height: 22px;">Array of text items to display in the carousel</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">bottomTexts</td>
+<td style="width: 9.07168%; height: 22px;">array</td>
+<td style="width: 16.9195%; height: 22px;">['Here is some example text', 'Example 2', 'Example 3']</td>
+<td style="width: 53.5447%; height: 22px;">Array of text to display below each item in the carousel</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">topFill</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">'0x212121'</td>
+<td style="width: 53.5447%; height: 22px;">Color fill for the top pane</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">buttonFill</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">'0x3d3d3d'</td>
+<td style="width: 53.5447%; height: 22px;">Color fill for the navigation buttons</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">bottomFill</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">'0x2A2A2A'</td>
+<td style="width: 53.5447%; height: 22px;">Color fill for the bottom pane</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">textFill</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">'0x3d3d3d'</td>
+<td style="width: 53.5447%; height: 22px;">Color fill for the text in the bottom pane</td>
+</tr>
+</tbody>
+</table>
