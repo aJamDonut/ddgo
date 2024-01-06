@@ -1,0 +1,74 @@
+<h2>Bars Counter</h2>
+<p>Displays a set of bars to represent a value, with customizable options.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>game.render.component('hud_bars_counter', HudBarsCounterOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>game.render.component('hud_bars_counter', {
+    value: 7,
+    orientation: 'vertical',
+    barWidth: 15,
+    barHeight: 30,
+    barCount: 8,
+    barSpacing: 3,
+    barTint: 0x00FF00,
+    warning: true
+});​</code></pre>
+<h3>HudBarsCounterOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">value</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">5</td>
+<td style="width: 53.5447%; height: 22px;">The current value to display</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">orientation</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"horizontal"</td>
+<td style="width: 53.5447%; height: 22px;">The orientation of the bars ("horizontal" or "vertical")</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">barWidth</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">10</td>
+<td style="width: 53.5447%; height: 22px;">The width of each bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">barHeight</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">25</td>
+<td style="width: 53.5447%; height: 22px;">The height of each bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">barCount</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">10</td>
+<td style="width: 53.5447%; height: 22px;">The total number of bars to display</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">barSpacing</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">5</td>
+<td style="width: 53.5447%; height: 22px;">The spacing between each bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">barTint</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">0x40FF77</td>
+<td style="width: 53.5447%; height: 22px;">The color of the bars</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">warning</td>
+<td style="width: 9.07168%; height: 22px;">boolean</td>
+<td style="width: 16.9195%; height: 22px;">false</td>
+<td style="width: 53.5447%; height: 22px;">Whether to enable warning colors for low values</td>
+</tr>
+</tbody>
+</table>

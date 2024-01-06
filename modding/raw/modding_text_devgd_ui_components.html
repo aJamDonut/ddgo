@@ -1,0 +1,18 @@
+<h2>UI Components</h2>
+The user interface is built up of component which can be rendered with game.render.component('component_name', {options}).<br /><br />To create a component the component code should be made e.g.<br /><br />
+<pre class="language-javascript"><code>_BLUEPRINTS.COMPONENTS.your_component = {
+  options: "comma-seperated options",
+  getElement: function (options) {
+    if (options == undefined) {
+      options = {};
+    }
+    var pane = new UIContainer();
+    
+    //... Insert custom UI code here
+
+    return pane;
+  },
+  parent: "component_composites",
+  name: "NPC Chatter Talk",
+};</code></pre>
+<p>Important: All components should be wrapped in a UIContainer as shown in the example. This is important to allow for extendability later on.</p>

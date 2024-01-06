@@ -1,0 +1,9 @@
+<h2>Flags</h2>
+<p>Flags can be used to set variables which persistent in save files. These are helpful for things like quests, first time events and basically anything custom. Some core features such as triggers use flags.</p>
+<h3>Setting a flag</h3>
+<p>Setting a flag by name. Overwrites any existing flag.</p>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>game.setFlag('flag-name', anyValueType)</code></pre>
+<p><strong>Note:</strong> Flags are never destroyed. To unset a flag, simply set the flag to false.</p>
+<h3>Getting a flag</h3>
+Getting a flag by name, if the flag does not exist it will return false.<br />
+<pre class="language-javascript" style="word-spacing: 0px;"><code>game.getFlag('flag-name')</code></pre>

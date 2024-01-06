@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>File Viewer</title>
+    <style>
+      body {
+        display: flex;
+        margin: 0;
+        background-color: #36393f;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+
+      #menuContainer {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        background-color: #2f3136;
+      }
+
+      #menuContainer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #menuContainer li {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #2f3136;
+      }
+
+      #menuContainer li:hover {
+        background-color: #40444b;
+      }
+
+      #contentContainer {
+        flex-grow: 1;
+        padding: 20px;
+        background-color: #202225;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menuContainer">
+      <ul id="fileMenu"></ul>
+    </div>
+
+    <div id="contentContainer"></div>
+
+    <script>
+      // Fetch files.json
+      fetch("raw/files.json")
+        .then((response) => response.json())
+        .then((data) => {
+          // Extract file objects from the data
+          const files = Object.values(data);
+
+          // Sort files by their "id" field
+          files.sort((a, b) => a.id - b.id);
+
+          // Create the file menu
+          const fileMenu = document.getElementById("fileMenu");
+          files.forEach((file) => {
+            const codename = file.codename;
+            const listItem = document.createElement("li");
+            listItem.textContent = file.name;
+
+            // Add click event listener to load file on click
+            listItem.addEventListener("click", () => {
+              loadFile(codename);
+              updateURLHashbang(codename);
+            });
+
+            fileMenu.appendChild(listItem);
+          });
+
+          // Check for hashbang in URL on page load
+          const hashbang = window.location.hash.substr(1);
+          if (hashbang) {
+            loadFile(hashbang);
+          } else {
+            // Load the first file by default
+            loadFile(files[0].codename);
+          }
+        })
+        .catch((error) => {
+          console.log("Failed to fetch files.json");
+          console.error(error);
+        });
+
+      function loadFile(codename) {
+        const fileURL = `raw/modding_${codename}.html`;
+
+        // Fetch the file
+        fetch(fileURL)
+          .then((response) => response.text())
+          .then((fileContent) => {
+            // Set the file content in the content container
+            document.getElementById("contentContainer").innerHTML = fileContent;
+            Prism.highlightAll();
+          })
+          .catch((error) => {
+            console.log(`Failed to fetch file: ${codename}`);
+            console.error(error);
+          });
+      }
+
+      function updateURLHashbang(codename) {
+        window.location.hash = `#${codename}`;
+      }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="prism.css" />
+    <script src="prism.js"></script>
+  </body>
+</html>

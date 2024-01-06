@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: white;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background: #111;
+        color: #ddd;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      header span,
+      header a {
+        color: #b650ff; /* Purple color */
+        text-decoration: none;
+        cursor: pointer;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+      nav div {
+        position: relative;
+      }
+      nav .submenu {
+        display: none;
+        position: absolute;
+        background: #292929;
+        padding: 10px;
+        border-radius: 5px;
+        top: 30px;
+        min-width: 180px;
+        flex-direction: column;
+      }
+      nav .submenu::before {
+        content: "";
+        height: 30px;
+        display: block;
+        position: absolute;
+        top: -30px;
+        left: 0;
+        right: 0;
+      }
+      nav div:hover .submenu {
+        display: flex;
+      }
+      .hamburger {
+        display: none;
+        padding: 10px 20px;
+        background: #b650ff;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+      }
+      /* Mobile styles */
+      @media (max-width: 600px) {
+        nav {
+          display: none;
+          flex-direction: column;
+        }
+        nav .submenu {
+          position: relative;
+          top: 0;
+        }
+        nav div:hover .submenu {
+          display: none;
+        }
+        nav div.active .submenu {
+          display: flex;
+        }
+        .hamburger {
+          display: flex;
+        }
+        .show {
+          display: flex;
+        }
+      }
+      .content {
+        margin: 20px;
+        color: #ddd;
+      }
+      .content h1,
+      .content p {
+        margin: 0 0 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="hamburger">Menu</div>
+      <nav>
+        <div>
+          <span>Main</span>
+          <div class="submenu">
+            <a href="#">Home</a>
+            <a href="#">Getting Started</a>
+            <a href="#">Lore</a>
+            <a href="#">Credits</a>
+          </div>
+        </div>
+        <div>
+          <span>World</span>
+          <div class="submenu">
+            <a href="#">Player & Squad</a>
+            <a href="#">Towns</a>
+          </div>
+        </div>
+        <div>
+          <span>Items</span>
+          <div class="submenu">
+            <a href="#">Utilities</a>
+            <a href="#">Buildings</a>
+            <a href="#">Weapons</a>
+            <a href="#">Armors</a>
+            <a href="#">Masks</a>
+          </div>
+        </div>
+
+        <div>
+          <span>Characters</span>
+          <div class="submenu">
+            <a href="#">Sincorp</a>
+            <a href="#">FTC</a>
+            <a href="#">Yamakai</a>
+            <a href="#">Lokals</a>
+            <a href="#">Animals</a>
+            <a href="#">Other</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Welcome to our website!</h1>
+      <p>
+        This is some example content. You can replace this with your own
+        content.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+        lacinia nibh at neque maximus, ut tempus neque consequat. Pellentesque
+        in nisl a nisl congue fermentum. Vivamus vel felis vel nisi suscipit
+        venenatis id in massa.
+      </p>
+    </div>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector("nav");
+      const menuItems = document.querySelectorAll("nav > div");
+      hamburger.addEventListener("click", () => {
+        nav.classList.toggle("show");
+      });
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

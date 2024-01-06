@@ -1,0 +1,53 @@
+<h2>Circle Counter</h2>
+<p>Displays a circular counter with a fill percentage.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>game.render.component('hud_circle_counter', HudCircleCounterOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>game.render.component('hud_circle_counter', {
+    w: 200,
+    thickness: 10,
+    ringColor: "0x3d3d3d",
+    fillColor: "0xff0000",
+    value: 75
+});​</code></pre>
+<h3>HudCircleCounterOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">w</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">150</td>
+<td style="width: 53.5447%; height: 22px;">Width of the circle counter</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">thickness</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">9</td>
+<td style="width: 53.5447%; height: 22px;">Thickness of the circle border</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">ringColor</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"0x3d3d3d"</td>
+<td style="width: 53.5447%; height: 22px;">Color of the circle border</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">fillColor</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"0xff0000"</td>
+<td style="width: 53.5447%; height: 22px;">Color of the filled portion of the circle</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">value</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">50</td>
+<td style="width: 53.5447%; height: 22px;">Value representing the fill percentage of the circle</td>
+</tr>
+</tbody>
+</table>

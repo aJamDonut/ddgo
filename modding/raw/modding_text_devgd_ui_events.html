@@ -1,0 +1,17 @@
+<h2>UI Events</h2>
+<p>Any components (since they use UIContainer) can handle all events as provided in PIXI. For example:</p>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>const button = new UIContainer();
+
+button.isInteractive(); //Must always set it to interactive first
+button.on('pointerdown', ()=&gt;{
+    console.log("I was clicked!")
+})</code></pre>
+<h3>Handling UI updates on tick</h3>
+To run an update on the UI you can also use the additional onTick function.<br />
+<pre class="language-javascript" style="word-spacing: 0px;"><code>pane.onTick(() =&gt; {
+  //Your code here
+});​</code></pre>
+For example<br /><br />
+<pre class="language-javascript"><code>pane.onTick(() =&gt; {
+  someTextThing.text = options.life.data.name; //Update the text every tick, to the be name of the NPC
+});​</code></pre>
