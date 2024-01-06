@@ -211,14 +211,14 @@
       const FILES_JSON = "raw/files.json";
       const FILE_HTML = "raw/modding_{codename}.html";
       const FILE_PREVIEW_IMG = "raw/modding_preview_{codename}.png";
-
+      window._files = {};
       function loadPage(codename) {
         loadFile(codename);
         updateURLHashbang(codename);
         toggleMenu(); // Hide the menu after selecting a file
       }
       // Fetch files.json
-      fetch(FILES_JSON)
+      fetch(FILES_JSON + "?date=" + Date.now())
         .then((response) => response.json())
         .then((data) => {
           // Extract file objects from the data
@@ -235,6 +235,8 @@
             const codename = file.codename;
             const listItem = document.createElement("li");
             listItem.textContent = file.name;
+
+            window._files[codename] = file;
 
             // Add click event listener to load file on click
             listItem.addEventListener("click", () => {
@@ -259,19 +261,27 @@
         });
 
       async function loadImage(codename) {
-        const imgFileURL = FILE_PREVIEW_IMG.replace("{codename}", codename);
+        let imageUrl = false;
+        if (
+          window._files[codename] &&
+          window._files[codename].variables &&
+          window._files[codename].variables.Preview
+        ) {
+          imageUrl = window._files[codename].variables.Preview;
+          console.log("Use JSON data");
+        } else {
+          const imgFileURL = FILE_PREVIEW_IMG.replace("{codename}", codename);
 
-        const response = await fetch(imgFileURL);
-        const blob = await response.blob();
+          const response = await fetch(imgFileURL);
+          const blob = await response.blob();
 
-        if (blob.type !== "image/png") {
-          return;
+          if (blob.type !== "image/png") {
+            return;
+          }
+
+          imageUrl = URL.createObjectURL(blob);
+          console.log("Use physical image");
         }
-
-        console.log(blob);
-        const imageUrl = URL.createObjectURL(blob);
-        console.log(imageUrl);
-
         let imgHTML = `<div><h3>Preview</h3><img src='${imageUrl}' /></div>`;
         const parser = new DOMParser();
         const doc = parser.parseFromString(imgHTML, "text/html");
