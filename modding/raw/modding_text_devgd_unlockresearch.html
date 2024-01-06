@@ -1,0 +1,20 @@
+<h2>Unlocks the whole research tree on load</h2>
+Unlocking part of the game with the mod was done like this
+<ol>
+<ol>
+<li>Run the mod when the game is stared</li>
+<li>Loop through all the recipes</li>
+<li>Unlock each recipe in the game session</li>
+</ol>
+</ol>
+<div></div>
+<pre class="language-javascript"><code>export default async () =&gt; {
+	//Trigger on every new session incase enabled mid-game
+	game.ee.on("game_started", () =&gt; {
+		let recipes = Object.keys(_BLUEPRINTS.RECIPES); //  Get all the recipe names in the game
+		for (let i = 0; i &lt; recipes.length; i++) { //Loop through each recipe
+			game.session.unlockRecipe(recipes[i]); // Unlock the recipe with this name
+		}
+		game.notify("All recipes unlocked"); // Tell the player they have unlocked everything
+	});
+};</code></pre>

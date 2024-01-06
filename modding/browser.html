@@ -52,7 +52,7 @@
 
     <script>
       // Fetch files.json
-      fetch("raw/files.json")
+      fetch("raw/files.json?date=" + Date.now())
         .then((response) => response.json())
         .then((data) => {
           // Extract file objects from the data

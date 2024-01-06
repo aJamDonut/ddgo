@@ -8,6 +8,15 @@ Welcome to Jams modding guide for Dead Desert and generally any games I make.<br
 </tr>
 </tbody>
 </table>
+<h3>Events</h3>
+<p>Events form the core of how the game operates and can be modded. If you want to modify something, you simply just need to know which events to add your code to.</p>
+<table>
+<tbody>
+<tr>
+<td><img src="img/game_events.png" alt="" /></td>
+</tr>
+</tbody>
+</table>
 <h3>The tech details</h3>
 <h4>Code</h4>
 <p>ABE and DD are both written in Vanilla Javascript without any external frameworks, although some libraries are used - such as PixiJS. This means that mods are written in Javascript.<br /><br />You can write mods using modern ESM code although the game and ABE object will remain a global object to allow for ease of use by all mods and developers.<br /><br />If you need to load an asset into the game, e.g. a font, sound asset, image or otherwise - you must ensure you use the built in loader functionality, e.g. Add blueprints. Do not simply use fetch requests or other loaders. Mods that do not use the built in loader are extremely discouraged.</p>
