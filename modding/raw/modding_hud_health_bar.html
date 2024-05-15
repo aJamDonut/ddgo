@@ -1,0 +1,53 @@
+<h2>Health bar</h2>
+<p>Displays a health bar with a customizable value, bar color, and text color.</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('hud_health_bar', HudHealthBarOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('hud_health_bar', {
+    w: 200,
+    h: 30,
+    value: 75,
+    barColor: "0xFF0000",
+    textColor: "0xFFFFFF"
+});​</code></pre>
+<h3>HudHealthBarOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">w</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">200</td>
+<td style="width: 53.5447%; height: 22px;">Width of the health bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">h</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">30</td>
+<td style="width: 53.5447%; height: 22px;">Height of the health bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">value</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">100</td>
+<td style="width: 53.5447%; height: 22px;">Current value of the health bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">barColor</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"0xFF0000"</td>
+<td style="width: 53.5447%; height: 22px;">Color of the health bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">textColor</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"0xFF0000"</td>
+<td style="width: 53.5447%; height: 22px;">Color of the text displaying the value</td>
+</tr>
+</tbody>
+</table>

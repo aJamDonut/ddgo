@@ -7,3 +7,13 @@
 <h3>Getting a flag</h3>
 Getting a flag by name, if the flag does not exist it will return false.<br />
 <pre class="language-javascript" style="word-spacing: 0px;"><code>game.getFlag('flag-name')</code></pre>
+<h2>Temporary Data</h2>
+<p>Sometimes we require a flag which doesn't need to persist across save files. For example, the text inputs in the game which allow users to search, may retain their search while the game is playing, so that next time it's loaded in - it uses the previous term. Since this is not required across the save file and can be forgotten about when the game is closed, we instead store it in a temporary location which could be cleared at any time and at minimum is cleared when the game is closed.<br /><br /><strong>Note: </strong>Unlike flags, temporary data has no expiration set, and will naturally be expired when the application closes or refreshes it state.<br /><br /></p>
+<h3>Setting temporary data</h3>
+<p>Setting a temp flag by name. Overwrites any existing temp flag.</p>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>game.setTemp('flag-name', anyValueType)</code></pre>
+<p><strong>Note:</strong>&nbsp;Flags are never destroyed. To unset a flag, simply set the flag to false.</p>
+<h3>Getting temporary data</h3>
+<p>Getting a temp flag by name, if the temp flag does not exist it will return false.</p>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>game.getTemp('flag-name')</code></pre>
+<div><span class="token punctuation">&nbsp;</span></div>

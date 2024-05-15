@@ -1,0 +1,14 @@
+<h2>Third Party Libraries</h2>
+<p>The engine uses several third party libraries to provide different functionality such as rendering or audio.</p>
+<h3>HowlerJS</h3>
+<p>HowerJS, the sound library is available globally using window.Howler</p>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>window.Howler.mute(true);</code></pre>
+<h3>Pixi Viewport</h3>
+Pixi viewport is already initialized as the world stage, but if you require your own use of pixi-viewport you can create a new instance with the following example:<br />
+<pre class="language-javascript" style="word-spacing: 0px;"><code>const viewport = new ABE.Viewport.Viewport({...options});</code></pre>
+<h3>TweenJS</h3>
+<p>TweenJS, the tweenings/animation library is also available globall on window.createjs.Tween<br /><br />For example:</p>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>createjs.Tween.removeTweens(tweenObject)</code></pre>
+<h3>lzstring</h3>
+<p>lzstring, the library used for compression and decompression is also available globally<br /><br />For example:</p>
+<pre class="language-javascript" style="word-spacing: 0px;"><code>LZString.compressToUTF16(string);</code></pre>

@@ -1,0 +1,64 @@
+<h2>Stat Bar</h2>
+<p>Displays a bar representing a stat value, such as health points (HP).</p>
+<h3>Syntax</h3>
+<pre class="language-javascript"><code>game.render.component('statBar', StatBarOptions);​</code></pre>
+<h3>Example</h3>
+<pre class="language-javascript"><code>game.render.component('statBar', {
+    name: 'HP',
+    value: 75,
+    maxValue: 100,
+    fill: 0x990000
+});​</code></pre>
+<h3>StatBarOptions Reference:</h3>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 176px;">
+<tbody>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">Property</td>
+<td style="width: 9.07168%; height: 22px;">Data type</td>
+<td style="width: 16.9195%; height: 22px;">Default value</td>
+<td style="width: 53.5447%; height: 22px;">Description</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">w</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">200</td>
+<td style="width: 53.5447%; height: 22px;">Width of the stat bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">h</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">25</td>
+<td style="width: 53.5447%; height: 22px;">Height of the stat bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">name</td>
+<td style="width: 9.07168%; height: 22px;">string</td>
+<td style="width: 16.9195%; height: 22px;">"HP"</td>
+<td style="width: 53.5447%; height: 22px;">Name of the stat</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">value</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">0</td>
+<td style="width: 53.5447%; height: 22px;">Current value of the stat</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">fill</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">0x990000</td>
+<td style="width: 53.5447%; height: 22px;">Color to fill the stat bar</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">maxValue</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">100</td>
+<td style="width: 53.5447%; height: 22px;">Maximum value of the stat</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 20.4641%; height: 22px;">padding</td>
+<td style="width: 9.07168%; height: 22px;">number</td>
+<td style="width: 16.9195%; height: 22px;">5</td>
+<td style="width: 53.5447%; height: 22px;">Padding around the stat bar</td>
+</tr>
+</tbody>
+</table>

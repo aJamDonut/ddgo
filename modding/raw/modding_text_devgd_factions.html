@@ -1,0 +1,15 @@
+<h2>Factions</h2>
+Factions are a mainstay in the game and all NPC's even the player characters belong to a faction.
+<h3>All factions in the game</h3>
+<pre class="language-javascript"><code>_BLUEPRINTS.FACTIONS</code></pre>
+<blockquote>Note: Modifying the FACTIONS blueprints before the game is loaded is safe and would just change that faction in game. Once in game, modifying this data would have unwanted side effects.</blockquote>
+<br />Get faction<br />
+<pre class="language-javascript"><code>const sinFaction = game.session.factions.getFaction("sincorp");</code></pre>
+<h3>Get player reputation</h3>
+<pre class="language-javascript"><code>game.session.factions.getReputation('faction_sincorp');</code></pre>
+<h3>Add player reputation</h3>
+<pre class="language-javascript"><code>game.session.factions.removeReputation('faction_sincorp', 5)</code></pre>
+<h3>Add reputation between factions</h3>
+<pre class="language-javascript"><code>game.session.factions.addReputationFor('faction_sincorp', 'faction_yamakai', 50)</code></pre>
+<h3>Check if two factions are hostile to eachother</h3>
+<pre class="language-javascript"><code>game.session.factions.factionHostile('faction_sincorp', 'faction_nomad')</code></pre>

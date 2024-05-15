@@ -93,13 +93,26 @@
         background-color: #40444b;
       }
 
+      #menuContainer {
+        max-height: 100vh;
+        overflow-y: scroll;
+      }
+
       #contentContainer {
         flex-grow: 1;
         padding: 20px;
         background-color: #202225db;
-        min-height: 100vh;
+        max-height: 97vh;
+        overflow: auto scroll;
       }
 
+      #contentContainer img {
+        /* Set the maximum width and height of the image to fit the container */
+        max-width: 100%;
+        max-height: 100%;
+        /* Ensure the image maintains its aspect ratio */
+        height: auto;
+      }
       /* Mobile Styles */
       @media (max-width: 767px) {
         #menuContainer {
@@ -181,6 +194,9 @@
       a:visited {
         color: #f3c046;
       }
+      #menuContainer ul {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -193,20 +209,39 @@
         <img src="raw/logo.png" />
       </div>
       <ul id="mainMenu"></ul>
-      <span class="section">Modding Guide</span>
+      <span
+        class="section opener"
+        data-open="fileMenu_wiki_modding_introduction"
+        >Modding Guide</span
+      >
       <ul id="fileMenu_wiki_modding_introduction"></ul>
-      <span class="section">Examples</span>
+      <span class="section opener" data-open="fileMenu_wiki_modding_examples"
+        >Examples</span
+      >
       <ul id="fileMenu_wiki_modding_examples"></ul>
-      <span class="section">User Interface</span>
-      <span><b>Getting Started</b></span>
-      <ul id="fileMenu_wiki_modding_ui_getting_started"></ul>
-      <span><b>Containers</b></span>
-      <ul id="fileMenu_component_containers"></ul>
-      <span><b>Inputs</b></span>
-      <ul id="fileMenu_component_inputs"></ul>
-      <span><b>Outputs</b></span>
-      <ul id="fileMenu_component_outputs"></ul>
-      <ul id="fileMenu_component_controls"></ul>
+      <span
+        class="section opener"
+        data-open="fileMenu_wiki_modding_ui_getting_started"
+        >User Interface</span
+      >
+      <ul id="fileMenu_wiki_modding_ui_getting_started">
+        <li class="opener" data-open="fileMenu_component_containers"
+          ><b>Containers</b></li
+        >
+        <ul id="fileMenu_component_containers"></ul>
+        <li class="opener" data-open="fileMenu_component_inputs"
+          ><b>Inputs</b></li
+        >
+        <ul id="fileMenu_component_inputs"></ul>
+        <li class="opener" data-open="fileMenu_component_outputs"
+          ><b>Outputs</b></li
+        >
+        <ul id="fileMenu_component_outputs"></ul>
+        <li class="opener" data-open="fileMenu_component_controls"
+          ><b>Controls</b></li
+        >
+        <ul id="fileMenu_component_controls"></ul>
+      </ul>
 
       <span class="section"><b>Misc</b></span>
       <ul id="fileMenu_misc"></ul>
@@ -220,6 +255,7 @@
       const FILE_PREVIEW_IMG = "raw/modding_preview_{codename}.png";
       window._files = {};
       function loadPage(codename) {
+        window.scrollTo(0, 0);
         loadFile(codename);
         updateURLHashbang(codename);
         toggleMenu(); // Hide the menu after selecting a file
@@ -329,6 +365,21 @@
         } else {
           menuButton.textContent = "Menu";
         }
+      }
+
+      const sections = document.querySelectorAll(".opener") || [];
+      for (let section of sections) {
+        section.addEventListener("click", () => {
+          const openId = section.getAttribute("data-open");
+
+          const openElem = document.querySelectorAll(
+            "#" + section.getAttribute("data-open")
+          )[0];
+
+          openElem.style.display =
+            openElem.style.display === "block" ? "none" : "block";
+          console.log({ openId, openElem, style: openElem.style.display });
+        });
       }
     </script>
 
